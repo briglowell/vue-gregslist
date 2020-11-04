@@ -1,5 +1,5 @@
 <template>
-  <div class="active-house col-6 offset-3 border border-dark text-center p-2 shadow-lg">
+  <div class="active-house col-6 offset-3 border border-dark text-center p-2 shadow-lg rounded bg-dark text-white mt-4">
     <img :src="house.imgUrl" class="img-fluid " alt="">
     <h3>Levels: {{ house.levels }} Beds: {{ house.bedrooms }} Baths: {{ house.bathrooms }}</h3>
     <p>Year: {{ house.year }}</p>

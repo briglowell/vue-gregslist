@@ -1,5 +1,5 @@
 <template>
-  <div class="car-component col-3 card">
+  <div class="car-component col-3 card text-center">
     <h3>
       {{ carProp.make }} {{ carProp.model }}
     </h3>

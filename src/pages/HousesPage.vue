@@ -1,5 +1,5 @@
 <template>
-  <div class="cars-page container-fluid">
+  <div class="houses-page container-fluid bg-info">
     <h1>Houses</h1>
     <form class="form-group" @submit.prevent="createHouse">
       <input type="text"
@@ -44,11 +44,11 @@
              placeholder="Price"
              v-model="state.newHouse.price"
       >
-      <button type="submit" class="btn btn-info">
+      <button type="submit" class="btn btn-primary">
         Create House
       </button>
     </form>
-    <div class="row">
+    <div class="row justify-content-center">
       <house-component v-for="h in houses" :key="h._id" :house-prop="h" />
     </div>
   </div>

@@ -1,10 +1,7 @@
 <template>
-  <div class="house-component col-4 card">
-    <h3>
-      Levels:{{houseProp.levels}} Beds:{{ houseProp.bedrooms }} Baths:{{ houseProp.bathrooms }}
-    </h3>
+  <div class="house-component col-3 card text-center mx-4 mb-2 bg-dark text-white">
     <router-link :to="{name: 'ActiveHouse' , params: {houseId: houseProp._id}}">
-      <img :src="houseProp.imgUrl" alt="house Img" class="img-fluid">
+      <img :src="houseProp.imgUrl" alt="house Img" class="img-fluid mt-2">
     </router-link>
 
     <!-- <img :src="houseProp.imgUrl"
@@ -12,8 +9,13 @@
          class="img-fluid"
          @click="setActiveHouse"
     > -->
-
-    {{houseProp.year}} ${{ houseProp.price }}
+    <div>
+      <h3 class="float-left">
+        ${{ houseProp.price }}
+      </h3> <p class="float-right">
+        {{ houseProp.bedrooms }} bds | {{ houseProp.bathrooms }} ba | {{ houseProp.levels }} fl
+      </p>
+    </div>
   </div>
 </template>
 
