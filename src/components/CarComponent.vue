@@ -17,7 +17,6 @@
          @click="setActiveCar"
     > -->
 
-    {{ carProp }}
   </div>
 </template>
 

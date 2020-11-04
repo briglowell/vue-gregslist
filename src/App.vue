@@ -12,6 +12,9 @@
     </router-link> -->
     <router-link :to="{name: 'Cars'}">
       Cars
+    </router-link> |
+    <router-link :to="{name: 'Houses'}">
+      Houses
     </router-link>
   </div>
   <router-view />
